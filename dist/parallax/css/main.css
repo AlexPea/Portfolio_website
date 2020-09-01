@@ -1,0 +1,364 @@
+.container {
+  max-width: 1080px;
+  margin: auto;
+  overflow: hidden; }
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase; }
+
+.title {
+  font-style: italic; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 0.8rem 0; }
+
+.py-1 {
+  padding: 0 1rem; }
+
+.py-2 {
+  padding: 1rem 0.8rem; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.8;
+  background-color: #fff;
+  color: #636363; }
+
+.home-image {
+  position: relative;
+  background: url(../img/parallax1.jpg) no-repeat center center/cover;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-attachment: fixed; }
+  .home-image #home-overlay {
+    position: absolute;
+    content: "";
+    background: white;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    z-index: 1; }
+  .home-image #home-section {
+    position: absolute;
+    z-index: 2;
+    width: inherit;
+    height: inherit; }
+    .home-image #home-section #home-heading {
+      position: absolute;
+      background-color: #404040;
+      color: #e0e0e0;
+      text-align: center;
+      white-space: nowrap;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+      .home-image #home-section #home-heading h1 {
+        display: inline-block;
+        padding: 0.4rem 1.5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        word-spacing: 0.1rem;
+        letter-spacing: 0.7rem; }
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 3; }
+  nav .navbar.top {
+    background: transparent; }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    background: #fff; }
+    nav ul .nav-bar {
+      display: flex; }
+      nav ul .nav-bar li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: #636363;
+        text-transform: uppercase;
+        font-size: 0.93rem;
+        width: 100%;
+        height: 100%; }
+        nav ul .nav-bar li a:hover {
+          background-color: rgba(179, 180, 175, 0.3);
+          color: black; }
+      nav ul .nav-bar li i {
+        padding-right: 0.2rem; }
+    nav ul .search-bar {
+      display: flex; }
+      nav ul .search-bar li a {
+        display: block;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: #636363;
+        text-transform: uppercase;
+        font-size: 0.93rem;
+        width: 100%;
+        height: 100%; }
+        nav ul .search-bar li a:hover {
+          background-color: rgba(255, 0, 0, 0.7);
+          color: #e0e0e0; }
+
+#about .about-text {
+  text-align: center; }
+  #about .about-text h2 {
+    font-weight: 400;
+    margin-top: 5rem; }
+  #about .about-text .title {
+    font-weight: bold; }
+  #about .about-text .about-me {
+    text-align: left;
+    font-size: 0.92rem; }
+
+#about .about-info {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap; }
+  #about .about-info .about-photo {
+    width: 50%; }
+    #about .about-info .about-photo p {
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 2rem; }
+      #about .about-info .about-photo p i {
+        padding-right: 1rem; }
+    #about .about-info .about-photo img {
+      display: block;
+      width: 90%;
+      margin: auto;
+      opacity: 0.6; }
+      #about .about-info .about-photo img:hover {
+        opacity: 1; }
+  #about .about-info .text {
+    width: 50%; }
+
+#skills .skills-title {
+  text-align: center;
+  font-size: 1.1rem; }
+
+#skills .skills-bars {
+  width: 100%; }
+  #skills .skills-bars p {
+    padding: 0.9rem;
+    letter-spacing: 0.7rem; }
+  #skills .skills-bars .skills-photgraphy > div {
+    width: 90%;
+    padding: 0.18rem 0;
+    background-color: #636363; }
+    #skills .skills-bars .skills-photgraphy > div span {
+      width: 100%;
+      display: block;
+      text-align: center;
+      color: white; }
+  #skills .skills-bars .skills-design > div {
+    width: 85%;
+    padding: 0.18rem 0;
+    background-color: #636363; }
+    #skills .skills-bars .skills-design > div span {
+      width: 100%;
+      display: block;
+      text-align: center;
+      color: white; }
+  #skills .skills-bars .skills-photoshop > div {
+    width: 75%;
+    padding: 0.18rem 0;
+    background-color: #636363; }
+    #skills .skills-bars .skills-photoshop > div span {
+      width: 100%;
+      display: block;
+      text-align: center;
+      color: white; }
+
+#skills .experience {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-top: 2.8rem;
+  height: 8.31rem;
+  background-color: #636363;
+  color: white; }
+  #skills .experience .numbers {
+    font-size: 1.5rem; }
+
+#portfolio .parallax2 {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: url(../img/parallax2.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 24.8rem;
+  background-attachment: fixed;
+  opacity: 0.8; }
+  #portfolio .parallax2 h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem; }
+
+#portfolio .gallery-title {
+  margin: 2.8rem auto 0;
+  text-align: center;
+  padding-bottom: 1rem; }
+  #portfolio .gallery-title h2 {
+    font-weight: 500;
+    padding: 2rem 0 1rem 0; }
+
+#portfolio .grid-gallery {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  justify-content: center;
+  align-content: space-evenly;
+  grid-gap: 0.5rem 1rem;
+  max-width: 1080px; }
+  #portfolio .grid-gallery img {
+    width: 100%; }
+    #portfolio .grid-gallery img:hover {
+      opacity: 0.8; }
+
+#portfolio .button {
+  text-align: center;
+  margin: 3rem auto 4.5rem auto; }
+  #portfolio .button button {
+    text-decoration: none;
+    color: black;
+    font-size: 0.8rem;
+    padding: 1rem 1.5rem;
+    border: none; }
+    #portfolio .button button:hover {
+      background-color: rgba(179, 180, 175, 0.8); }
+
+#contact .parallax3 {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: url(../img/parallax3.jpg) no-repeat center center/cover;
+  width: 100%;
+  height: 24.8rem;
+  background-attachment: fixed;
+  opacity: 0.8; }
+  #contact .parallax3 h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: 0.5rem; }
+
+#contact .contact-title {
+  margin: 2.8rem auto 0;
+  text-align: center;
+  padding-bottom: 1rem; }
+  #contact .contact-title h2 {
+    font-weight: 500;
+    padding: 2rem 0 1rem 0; }
+
+#contact .contact-form {
+  display: flex; }
+  #contact .contact-form .contact-image {
+    width: 35%;
+    height: auto;
+    padding: 0 1rem; }
+    #contact .contact-form .contact-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px; }
+  #contact .contact-form .form {
+    width: 65%;
+    padding: 1rem; }
+    #contact .contact-form .form-title {
+      font-size: 1.1rem;
+      font-weight: 400;
+      padding-bottom: 1rem; }
+      #contact .contact-form .form-title span {
+        padding-right: 1.5rem; }
+    #contact .contact-form .form .main-form p {
+      padding-bottom: 0.8rem;
+      margin-left: 0.5rem; }
+    #contact .contact-form .form .main-form form .form-flex {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%; }
+      #contact .contact-form .form .main-form form .form-flex .item-1 {
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+        width: calc(50% - 1rem);
+        margin: 0.2rem 0.5rem; }
+      #contact .contact-form .form .main-form form .form-flex .item-2 {
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+        width: calc(50% - 1rem);
+        margin: 0.2rem 0.5rem; }
+      #contact .contact-form .form .main-form form .form-flex .item-3 {
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+        width: calc(100% - 1rem);
+        margin: 0.2rem 0.5rem; }
+    #contact .contact-form .form .main-form form button {
+      float: right;
+      margin: 0.8rem 0.5rem 0 0;
+      padding: 0.8rem 1rem;
+      border: none;
+      background-color: black;
+      color: white;
+      font-size: 0.9rem; }
+      #contact .contact-form .form .main-form form button i {
+        padding-right: 0.2rem; }
+
+footer {
+  margin-top: 6rem; }
+  footer .main-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 18rem;
+    height: 18rem;
+    background-color: #636363;
+    opacity: 0.9; }
+    footer .main-footer:hover {
+      opacity: 1;
+      background-color: #000; }
+    footer .main-footer .btn {
+      display: inline-block;
+      background-color: #e0e0e0;
+      padding: 0.5rem 1.1rem;
+      color: #636363;
+      font-size: 0.9rem;
+      text-decoration: none;
+      margin-bottom: 1.5rem; }
+      footer .main-footer .btn:hover {
+        background-color: rgba(216, 216, 216, 0.9);
+        color: black; }
+      footer .main-footer .btn i {
+        font-size: 1rem;
+        padding-right: 0.8rem; }
+    footer .main-footer .footer-icons a {
+      text-decoration: none;
+      color: #e0e0e0;
+      font-size: 1.5rem; }
+      footer .main-footer .footer-icons a i:hover {
+        color: rgba(216, 216, 216, 0.5); }
