@@ -4,16 +4,28 @@
   &__wrapper {
     padding: 60px 50px 0 50px;
     display: grid;
-    grid-template-columns: repeat(2, 370px);
-    grid-template-rows: repeat(3, minmax(44px, auto));
+    grid-template: repeat(3, minmax(45px, auto)) / repeat(2, 365px);
+    grid-auto-rows: minmax(45px, auto);
     row-gap: 15px;
     justify-content: space-between;
   }
 
   &__item {
+    position: relative;
     display: grid;
-    grid-template-rows: 21px minmax(23px, auto);
-    grid-auto-rows: auto;
+    grid-template: repeat(2, minmax(21px, auto)) / repeat(auto);
+    row-gap: 5px;
+    padding-left: 25px;
+
+    &:before {
+      content: "";
+      width: 15px;
+      height: 15px;
+      background-color: $main-color;
+      border-radius: 100%;
+      position: absolute;
+      top: 5px;
+    }
 
     &-title {
       display: flex;
@@ -21,22 +33,8 @@
     }
 
     &-text {
-      padding-left: 25px;
       font-size: 12px;
       line-height: 18px;
-      align-self: end;
-    }
-  }
-
-  &__title {
-    padding-left: 25px;
-    position: relative;
-    @include before_circle;
-
-    &:before {
-      width: 15px;
-      height: 15px;
-      top: 3px;
     }
   }
 }
