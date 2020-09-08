@@ -13,7 +13,7 @@
   &__item {
     position: relative;
     display: grid;
-    grid-template: repeat(2, minmax(21px, auto)) / repeat(auto);
+    grid-template: repeat(2, minmax(21px, auto)) / repeat(2, auto);
     row-gap: 5px;
     padding-left: 25px;
 
@@ -25,11 +25,6 @@
       border-radius: 100%;
       position: absolute;
       top: 5px;
-    }
-
-    &-title {
-      display: flex;
-      justify-content: space-between;
     }
 
     &-text {

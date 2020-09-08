@@ -196,7 +196,26 @@
       <div class="container">
         <div class="about__wrapper">
           <div class="about__photo">
-            <img src="img/main_photo.jpg" alt="photo" />
+            <!-- <img
+              srcset="img/main_photo-min.jpg 300w, img/main_photo.jpg 400w"
+              sizes="(max-width: 576px) 280px, (min-width: 577px) 400px"
+              src="img/main_photo.jpg"
+              alt="photo"
+            /> -->
+
+            <!-- <picture>
+              <source
+                media="(max-width: 576px)"
+                srcset="img/main_photo-min.jpg"
+              />
+              <source media="(min-width: 577px)" srcset="img/main_photo.jpg" />
+              <img src="img/main_photo.jpg" alt="photo" />
+            </picture> -->
+
+            <picture>
+              <source type="image/webp" srcset="img/main_photo.webp" />
+              <img src="img/main_photo.jpg" alt="photo" />
+            </picture>
           </div>
 
           <div class="about__descr">
@@ -553,7 +572,7 @@
       </div>
     </section>
     <!-- Portfolio -->
-    <!-- <section class="portfolio">
+    <section class="portfolio">
       <div class="container">
         <h2 class="title title_fz16 title__section-title">Портфолио</h2>
         <div class="title title_fz36 title__section-subtitle">
@@ -562,52 +581,50 @@
         <div class="divider"></div>
         <div class="portfolio__wrapper">
           <div>
-            <a href="/grayscale" class="portfolio__item">
+            <a href="/grayscale" class="portfolio__item" target="_blank">
               <img src="img/works/grayscale.jpg" alt="grayscale" />
             </a>
           </div>
           <div>
-            <a href="/parallax" class="portfolio__item">
+            <a href="/parallax" class="portfolio__item" target="_blank">
               <img src="img/works/parallax.jpg" alt="parallax" />
             </a>
           </div>
           <div>
-            <a href="#" class="portfolio__item">
+            <a href="#" class="portfolio__item" target="_blank">
               <img src="img/works/bread.jpg" alt="test" />
             </a>
           </div>
           <div class="vertical">
-            <a href="/jdportfolio" class="portfolio__item">
+            <a href="/jdportfolio" class="portfolio__item" target="_blank">
               <img src="img/works/jdportfolio.jpg" alt="jdportfolio" />
             </a>
           </div>
           <div>
-            <a href="#" class="portfolio__item">
+            <a href="#" class="portfolio__item" target="_blank">
               <img src="img/works/ipad.jpg" alt="test" />
             </a>
           </div>
           <div class="horizontal">
-            <a href="/newsgrid" class="portfolio__item">
+            <a href="/newsgrid" class="portfolio__item" target="_blank">
               <img src="img/works/newsgrid.jpg" alt="newsgrid" />
             </a>
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- Pricelist -->
-    <!-- <section class="pricelist">
+    <section class="pricelist">
       <div class="container">
         <h2 class="title title_fz16 title__section-title">Прайс-лист</h2>
         <div class="divider"></div>
         <div class="pricelist__wrapper">
           <div class="pricelist__item">
-            <div class="pricelist__item-title">
-              <div class="title title_fz14 pricelist__title">
-                Landing-page
-              </div>
-              <div class="title title_fz14 pricelist__price">
-                от 8000 руб.
-              </div>
+            <div class="title title_fz14 pricelist__title">
+              Landing-page
+            </div>
+            <div class="title title_fz14 pricelist__price">
+              от 8000 руб.
             </div>
             <div class="pricelist__item-text">
               Одностраничный сайт для презентации услуг/товаров/...
@@ -615,77 +632,66 @@
           </div>
 
           <div class="pricelist__item">
-            <div class="pricelist__item-title">
-              <div class="title title_fz14 pricelist__title">
-                Web-приложение
-              </div>
-              <div class="title title_fz14 pricelist__price">
-                от 28000 руб.
-              </div>
+            <div class="title title_fz14 pricelist__title">
+              Web-приложение
             </div>
-            <div class="pricelist__item-text">
-              Приложение внутри браузера для лучшего комфорта
+            <div class="title title_fz14 pricelist__price">
+              от 28000 руб.
             </div>
+          <div class="pricelist__item-text">
+            Приложение внутри браузера для лучшего комфорта
           </div>
+        </div>
 
           <div class="pricelist__item">
-            <div class="pricelist__item-title">
-              <div class="title title_fz14 pricelist__title">
-                Корпоративный сайт
-              </div>
-              <div class="title title_fz14 pricelist__price">
-                от 20000 руб.
-              </div>
+            <div class="title title_fz14 pricelist__title">
+              Корпоративный сайт
             </div>
-            <div class="pricelist__item-text">
-              Сайт для вашего бизнеса или компании
+            <div class="title title_fz14 pricelist__price">
+              от 20000 руб.
             </div>
+          <div class="pricelist__item-text">
+            Сайт для вашего бизнеса или компании
           </div>
+        </div>
 
           <div class="pricelist__item">
-            <div class="pricelist__item-title">
-              <div class="title title_fz14 pricelist__title">
-                Android/IOS Приложение
-              </div>
-              <div class="title title_fz14 pricelist__price">
-                от 25000 руб.
-              </div>
+            <div class="title title_fz14 pricelist__title">
+              Android/IOS Приложение
             </div>
-            <div class="pricelist__item-text">
-              Приложение для смартфона любой ОС
+            <div class="title title_fz14 pricelist__price">
+              от 25000 руб.
             </div>
+          <div class="pricelist__item-text">
+            Приложение для смартфона любой ОС
           </div>
+        </div>
 
           <div class="pricelist__item">
-            <div class="pricelist__item-title">
-              <div class="title title_fz14 pricelist__title">
-                Интернет-магазин
-              </div>
-              <div class="title title_fz14 pricelist__price">
-                от 30000 руб.
-              </div>
+            <div class="title title_fz14 pricelist__title">
+              Интернет-магазин
             </div>
-            <div class="pricelist__item-text">
-              Инструмент для ваших продаж в сети
+            <div class="title title_fz14 pricelist__price">
+              от 30000 руб.
             </div>
+          <div class="pricelist__item-text">
+            Инструмент для ваших продаж в сети
           </div>
+        </div>
 
           <div class="pricelist__item">
-            <div class="pricelist__item-title">
-              <div class="title title_fz14 pricelist__title">
-                Дизайн
-              </div>
-              <div class="title title_fz14 pricelist__price">
-                Индивидуально
-              </div>
+            <div class="title title_fz14 pricelist__title">
+              Дизайн
             </div>
-            <div class="pricelist__item-text">
-              Создам дизайн для вашего сайта/приложения...
+            <div class="title title_fz14 pricelist__price">
+              Индивидуально
             </div>
+          <div class="pricelist__item-text">
+            Создам дизайн для вашего сайта/приложения...
           </div>
         </div>
       </div>
-    </section> -->
+    </section>
     <!-- Contacts -->
     <!-- <section class="contacts">
       <div class="container">
